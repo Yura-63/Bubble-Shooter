@@ -7,12 +7,19 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame ()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(1);
     }
-
+    public void BackMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
     public void QuitGame()
     {
         Debug.Log("Exit!");
         Application.Quit();
+    }
+    public void Link_VK()
+    {
+        Application.OpenURL("https://vk.com/yuri.moiseev");
     }
 }
